@@ -1,0 +1,73 @@
+:root {
+    --clr-one: #10101a;
+    --clr-two: #0c0c14;
+    --clr-three: #2fbf71;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --transition: 0.3s all linear;
+    --font-xs: 0.7rem;
+    --font-sm: 0.8rem;
+    --font-md: 0.855rem;
+    --font-lg: 1.3rem;
+    --font-xl: 1.5rem;
+    --font-xxl: 1.8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2400px;
+    min-height: 300px;
+    font-size: 0.9rem;
+    background-color: var(--clr-two);
+    color: var(--clr-white);
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+#header-mob {
+    width: 100%;
+    z-index: 100;
+    background-color: var(--clr-one);
+    padding: 1rem;
+    font-size: var(--font-lg);
+}
+
+.navbar-toggler-box {
+    font-size: var(--font-xxl);
+    padding: 1.2rem 1rem 0.5rem 1rem;
+    
+}
+
+.navbar-toggler a{
+    padding: 0.8rem;
+    color: var(--clr-white);
+    border-radius: 9px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}  
+
+.navbar-toggler a i {
+    vertical-align: middle;
+}
+
+.navbar-toggler a:hover {
+    background-color: var(--clr-three);
+    
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    
+}
+
+.name-header-mob-right p {
+    padding-top: 0.8rem;
+}
