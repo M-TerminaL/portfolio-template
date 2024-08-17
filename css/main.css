@@ -23,7 +23,7 @@ body {
     max-width: 2400px;
     min-height: 300px;
     font-size: 0.9rem;
-    background-color: var(--clr-two);
+    background-color: var(--clr-one);
     color: var(--clr-white);
     line-height: 2rem;
     text-decoration: none;
@@ -71,3 +71,62 @@ body {
 .name-header-mob-right p {
     padding-top: 0.8rem;
 }
+
+#navbar-desktop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15.6rem;
+    height: 100%;
+    background-color: var(--clr-two);
+    overflow: visible;
+}
+
+#nav-top-container {
+    width: 100%;
+    height: 16rem;
+    position: relative;
+}
+
+#geo-shape-one {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--clr-three);
+}
+
+#geo-shape-two {
+    width: 100%;
+    height: 15.6rem;
+    background-color: var(--clr-three);
+    border-radius:45%;
+    -webkit-border-radius:45%;
+    -moz-border-radius:45%;
+    -ms-border-radius:45%;
+    -o-border-radius:45%;
+    margin-top: -8rem;
+}
+
+#img-profile {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: calc(15.6rem / 4);
+    border: 3px solid var(--clr-white);
+ 
+}
+
+#img-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
