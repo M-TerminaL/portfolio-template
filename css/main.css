@@ -35,6 +35,8 @@ li {
 }
 
 #header-mob {
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 100;
     background-color: var(--clr-one);
@@ -65,6 +67,7 @@ li {
 
 .navbar-toggler a:hover {
     background-color: var(--clr-three);
+    border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
@@ -78,7 +81,7 @@ li {
 #navbar-desktop {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     width: 15.6rem;
     height: 100%;
     background-color: var(--clr-two);
@@ -250,4 +253,148 @@ li {
     background-color: var(--clr-one);
     opacity: 1;
     z-index: 10000000;
+}
+
+
+.short-intro {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-right: 1rem;*/
+    padding-top: 3rem; 
+}
+
+.short-intro h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    /* font-style: italic; */
+}
+
+.short-intro h3 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+.short-intro a {
+    width: 7rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: var(--clr-three);
+    margin-top: 3rem;
+    color: var(--clr-white);
+    box-shadow: -4px 4px var(--clr-white);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.short-intro a:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-three);
+    box-shadow: -4px 4px var(--clr-three);
+}
+
+.main-left {
+    position: absolute;
+    width: 100%;
+}
+
+.main-profile-img-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.main-profile-img-box img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    outline-width: 5px;
+    outline-offset: 5px;
+    outline-color: #0088CC;
+    outline-style: dashed;
+}
+
+
+@media screen and (min-width:768px) {
+
+    /* .short-intro {
+        padding-right: 5rem;
+    } */
+
+    .short-intro h1 {
+        font-size: 4rem;
+    }
+
+    .main-profile-img-box {
+        display: flex;
+        justify-content: center;
+        /* padding-right: 5rem; */
+        margin-top: 7rem;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    
+    .main-profile-img-box {
+        margin-top: 3rem;
+    }
+
+
+    
+}
+
+@media screen and (min-width:1200px) {
+    #navbar-desktop {
+        right:0;
+    }
+    .main-left {
+        position: absolute;
+        right: 15.6rem;
+        height: 100%;
+        width: calc(100% - 15.6rem);
+        padding-top: 10rem;
+    }
+    
+    .short-intro {
+        justify-content: center;
+        align-items: start;
+        padding-right: 5rem;
+        padding-top: 2rem;
+    }
+    
+   
+    
+    .short-intro a {
+        width: 7rem; 
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        background-color: var(--clr-three);
+        margin-top: 3rem;
+        color: var(--clr-white);
+        box-shadow: -4px 4px var(--clr-white);
+    }
+
+    .main-profile-img-box {
+        margin-top: 0;
+        
+    }
+
+    .main-profile-img-box img{
+        width: 25rem;
+        height: 25rem;
+
+    }
 }
