@@ -35,10 +35,10 @@ li {
 }
 
 #header-mob {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 9999999999;
     background-color: var(--clr-one);
     padding: 1rem;
     font-size: var(--font-lg);
@@ -88,6 +88,7 @@ li {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
+    z-index: 99999999999;
 }
 
 #nav-top-container {
@@ -246,20 +247,39 @@ li {
     z-index: 10000000000000000000;
 }
 
+
+::-webkit-scrollbar {
+    width:5px;
+    background-color:var(--clr-white);
+    background-color: var(--clr-one);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f200ff;
+    border-radius: 10px;
+}
+
+/* Start Home Page Styles */
+
+
+
 #tsparticles {
     width: 100%;
     height: 100vh;
     background-color: var(--clr-one);
     opacity: 1;
+    overflow: hidden;
     z-index: 10000000;
+    
 }
-
 
 .short-intro {
     display: flex;
+    background-color: transparent;
     flex-direction: column;
     align-items: center;
     padding-top: 3rem; 
+    overflow: hidden;
 }
 
 .short-intro h1 {
@@ -276,7 +296,7 @@ li {
 }
 
 .short-intro a {
-    width: 7rem;
+    /* width: 7rem; */
     padding: 0.5rem 1rem;
     text-decoration: none;
     background-color: var(--clr-three);
@@ -344,6 +364,150 @@ li {
 }
 }
 
+/* End Home Page Styles */
+
+
+/* Start About me Styles */
+
+#about {
+   padding-top: 10rem;
+}
+
+.title {
+    width: 100%;
+    /* margin-top: 5rem; */
+    padding-right: 1rem;
+}
+
+.title h3:nth-child(1) {
+    margin-bottom: 3rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.title h3:nth-child(1):before {
+    content: "";
+    position: absolute;
+    bottom:-15px;
+    background-color: var(--clr-three);
+    width: 60px;
+    height: 1px;
+
+}
+
+.title h3:nth-child(1)::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--clr-three);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: -17px;
+    right: 60px;
+    z-index: -1;
+
+}
+
+.title h3:nth-child(2) {
+    margin-bottom: 2.5rem;
+}
+
+.title p {
+    font-weight: 300;
+    color: #ffffffbb;
+}
+
+.title .btn-style {
+    /* width: 7rem; */
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    background-color: var(--clr-three);
+    margin-top: 3rem;
+    color: var(--clr-white);
+    box-shadow: -4px 4px var(--clr-white);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    margin-left: 2rem;
+}
+
+.title .btn-style:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-three);
+    box-shadow: -4px 4px var(--clr-three);
+}
+
+
+.sep {
+   padding: 100px 5px ;
+}
+
+.separated {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background-color: var(--clr-three);
+}
+
+.skill h6 {
+    font-size: 0.8rem;
+}
+
+#edu-box {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--clr-two);
+    margin-bottom: 20px;
+}
+
+#edu-box span {
+    padding: 0.1rem 1rem;
+    background-color: var(--clr-three);
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    margin-right: -8px;
+    position: relative;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+#edu-box span::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background-color: #165934;
+    border-top: 5px solid #165934;
+    /* background-color: #155b34; */
+    border-top: 5px solid #092516;
+    border-right: 10px solid transparent;
+    border-bottom-right-radius: 580px;
+    
+}
+
+#edu-box h6, p {
+    margin-right: 1.5rem;
+}
+
+#edu-box p {
+    margin-bottom: 2rem;
+}
+
+/* End About me Styles */
+
+
+
+
 
 @media screen and (min-width:768px) {
     .short-intro h1 {
@@ -355,6 +519,8 @@ li {
         justify-content: center;
         margin-top: 7rem;
     }
+
+    
 }
 
 
@@ -377,6 +543,12 @@ li {
         width: 25rem;
         height: 25rem;
     }
+
+    #about {
+        padding-top: 0rem; 
+        padding-right: 0rem; 
+     }
+
     
 }
 
@@ -399,16 +571,6 @@ li {
         padding-top: 2rem;
     }
     
-    .short-intro a {
-        width: 7rem; 
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        background-color: var(--clr-three);
-        margin-top: 3rem;
-        color: var(--clr-white);
-        box-shadow: -4px 4px var(--clr-white);
-    }
-
     .main-profile-img-box {
         margin-top: 0;  
     }
@@ -418,4 +580,10 @@ li {
         height: 25rem;
 
     }
+
+    .title {
+        margin-top: -3rem; 
+        padding-right: 6rem; 
+        padding-left: 2rem;
+     }
 }

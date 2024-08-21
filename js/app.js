@@ -87,7 +87,47 @@ const ps = new PerfectScrollbar('.custom-scrollbar-container', {
 
 /* End Custom Scrollbar */
 
+/* Start Page Filling JQuery */
 
+
+$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: '.section',
+        anchors: ['home', 'about'],
+        direction: 'vertical',
+        verticalCentered: true,
+        verticalPadding: '2vh',
+
+        sectionsColor: ['#10101a', '#10101a', '#10101a', '#10101a', '#10101a'],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#2fbf71',
+            'bulletsColor': '#fff',
+            'position': 'left',
+            'tooltips': ['home', 'about']
+        },
+       	// normalScrollElements: '.pp-table',
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: true,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+	});
+});
+
+
+
+
+/* End Page Filling JQuery */
 
 
 
