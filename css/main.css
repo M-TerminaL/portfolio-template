@@ -263,6 +263,24 @@ li {
 /* Start Home Page Styles */
 
 
+#nav-list li.active>a {
+    color: var(--clr-three);
+    font-weight: 600;
+}
+
+/* .pp-nav .pp-bullet.pp-active {
+    background-color: #f00; /* رنگ قرمز برای بال فعال */
+  
+    #pp-nav a.active {
+       /* background-color: var(--clr-three);
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       z-index: 43535;
+       padding; */
+}
 
 #tsparticles {
     width: 100%;

@@ -92,7 +92,7 @@ const ps = new PerfectScrollbar('.custom-scrollbar-container', {
 
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-	    menu: '.section',
+	    menu: '#nav',
         anchors: ['home', 'about'],
         direction: 'vertical',
         verticalCentered: true,
