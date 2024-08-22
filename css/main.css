@@ -50,10 +50,12 @@ li {
 
 }
 
-.navbar-toggler a {
-    padding: 0.8rem;
+.navbar-toggler button {
+    padding: 0.8rem 0.8rem 0.57rem 0.8rem;
     color: var(--clr-white);
     border-radius: 9px;
+    background-color: transparent;
+    border: none;
     transition: var(--transition);
     -webkit-transition: var(--transition);
     -moz-transition: var(--transition);
@@ -61,11 +63,11 @@ li {
     -o-transition: var(--transition);
 }
 
-.navbar-toggler a i {
+.navbar-toggler button i {
     vertical-align: middle;
 }
 
-.navbar-toggler a:hover {
+.navbar-toggler button:hover {
     background-color: var(--clr-three);
     border-radius: 9px;
     -webkit-border-radius: 9px;
@@ -90,6 +92,15 @@ li {
     display: flex;
     flex-direction: column;
     z-index: 99999999999;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.toggle {
+    right: 0 !important;
 }
 
 #nav-top-container {

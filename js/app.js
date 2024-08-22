@@ -151,7 +151,20 @@ $(document).ready(function() {
 /* End Magnific Popup JQuery */
 
 
+/* Start Navbar Toggler Button */
 
+const navbarElement = document.getElementById('navbar-desktop')
+const menuBtnElement = document.getElementById('nav-btn')
+const navIconElement = document.getElementById('nav-ico')
+
+menuBtnElement.addEventListener('click', () => {
+    navbarElement.classList.toggle('toggle')
+    navIconElement.classList.toggle('bi-x')
+})
+
+
+
+/* End Navbar Toggler Button */
 
 
 
