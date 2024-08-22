@@ -93,7 +93,7 @@ const ps = new PerfectScrollbar('.custom-scrollbar-container', {
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	    menu: '#nav',
-        anchors: ['home', 'about', 'work'],
+        anchors: ['home', 'about', 'work', 'certificates'],
         direction: 'vertical',
         verticalCentered: true,
         verticalPadding: '2vh',
@@ -108,7 +108,7 @@ $(document).ready(function() {
             'textColor': '#2fbf71',
             'bulletsColor': '#fff',
             'position': 'left',
-            'tooltips': ['home', 'about', 'work']
+            'tooltips': ['home', 'about', 'work', 'certificates']
         },
        	// normalScrollElements: '.pp-table',
         normalScrollElementTouchThreshold: 5,
@@ -128,6 +128,27 @@ $(document).ready(function() {
 
 
 /* End Page Filling JQuery */
+
+
+
+/* Start Magnific Popup JQuery */
+
+$(document).ready(function() {
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        items: {
+            src: './images/desktop-wallpaper-software-developer-software-engineering.jpg'
+          },
+        gallery: {
+            enabled: true
+        }
+    });
+});
+
+
+/* End Magnific Popup JQuery */
 
 
 

@@ -250,8 +250,8 @@ li {
 
 
 ::-webkit-scrollbar {
-    width:5px;
-    background-color:var(--clr-white);
+    width: 5px;
+    background-color: var(--clr-white);
     background-color: var(--clr-one);
 }
 
@@ -270,9 +270,9 @@ li {
 
 /* .pp-nav .pp-bullet.pp-active {
     background-color: #f00; /* رنگ قرمز برای بال فعال */
-  
-    #pp-nav a.active {
-       /* background-color: var(--clr-three);
+
+#pp-nav a.active {
+    /* background-color: var(--clr-three);
        border-radius: 50%;
        -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
@@ -289,7 +289,7 @@ li {
     opacity: 1;
     overflow: hidden;
     z-index: 10000000;
-    
+
 }
 
 .short-intro {
@@ -297,7 +297,7 @@ li {
     background-color: transparent;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem; 
+    padding-top: 3rem;
     /* overflow: hidden; */
 }
 
@@ -346,7 +346,7 @@ li {
     margin-top: 7rem;
 }
 
-.main-profile-img-box img{
+.main-profile-img-box img {
     width: 15rem;
     height: 15rem;
     box-shadow: inset 0 0 0 9px rgba(245, 242, 242, 0.3);
@@ -366,21 +366,23 @@ li {
         -moz-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -ms-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -o-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
+    }
+
     50% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
         -webkit-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
         -moz-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
         -ms-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
         -o-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-}
+    }
+
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -webkit-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -moz-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -ms-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         -o-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
+    }
 }
 
 /* End Home Page Styles */
@@ -389,7 +391,7 @@ li {
 /* Start About me Styles */
 
 #about {
-   padding-top: 10rem;
+    padding-top: 10rem;
 }
 
 .title {
@@ -407,7 +409,7 @@ li {
 .title h3:nth-child(1):before {
     content: "";
     position: absolute;
-    bottom:-15px;
+    bottom: -15px;
     background-color: var(--clr-three);
     width: 60px;
     height: 1px;
@@ -464,7 +466,7 @@ li {
 
 
 .sep {
-   padding: 100px 5px ;
+    padding: 100px 5px;
 }
 
 .separated {
@@ -511,10 +513,11 @@ li {
     border-top: 5px solid #092516;
     border-right: 10px solid transparent;
     border-bottom-right-radius: 580px;
-    
+
 }
 
-#edu-box h6, p {
+#edu-box h6,
+p {
     margin-right: 1.5rem;
 }
 
@@ -585,12 +588,12 @@ li {
 } */
 
 .work-box:hover>img {
-    transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    -moz-transform:scale(1.2);
-    -ms-transform:scale(1.2);
-    -o-transform:scale(1.2);
-   
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+
 }
 
 .work-box:hover::after {
@@ -607,8 +610,7 @@ li {
 
 .video-wrapper {
     width: 100%;
-    /* height:20rem; */
-    margin: 10px auto 10px auto; 
+    margin: 10px auto 10px auto;
     padding: 0;
 }
 
@@ -636,8 +638,92 @@ li {
 }
 
 /* End Work Styles */
+/* Start certificates Styles */
+#certificates {
+    padding-top: 10rem;
+}
+
+.certificate-box img {
+    width: 100%;
+}
+
+.certificate-icon-box a {
+    padding: 0.6rem;
+    border-radius: 9px;
+    background-color: var(--clr-three);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    font-size: 1.2rem;
+}
+
+.des-certificate {
+    background-color: rgba(20, 17, 17, 0.826);
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    opacity: 0;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.certificate-box:hover>.des-certificate {
+    opacity: 1;
+}
+
+.des-certificate h6 {
+    line-height: 3rem;
+}
 
 
+
+
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+  /* overlay animate in */
+  .mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+  }
+  /* overlay animate out */
+  .mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+  }
+  
+  /* content at start */
+  .mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+  /* content animate it */
+  .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+  }
+  /* content animate out */
+  .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+  }
+
+
+
+
+
+
+/* End certificates Styles */
 
 
 
@@ -656,7 +742,7 @@ li {
         font-size: 12px;
     }
 
-    
+
 }
 
 
@@ -675,25 +761,30 @@ li {
         padding-top: 10rem;
     }
 
-    .main-profile-img-box img{
+    .main-profile-img-box img {
         width: 25rem;
         height: 25rem;
     }
 
     #about {
-        padding-top: 0rem; 
-        padding-right: 0rem; 
-     }
-     #work {
-        padding-top: 0;  
+        padding-top: 0rem;
+        padding-right: 0rem;
     }
-    
+
+    #work {
+        padding-top: 0;
+    }
+
+    #certificates {
+        padding-top: 0;
+    }
 }
 
 @media screen and (min-width:1200px) {
     #navbar-desktop {
-        right:0;
+        right: 0;
     }
+
     .main-left {
         position: absolute;
         right: 15.6rem;
@@ -701,35 +792,35 @@ li {
         width: calc(100% - 15.6rem);
         padding-top: 10rem;
     }
-    
+
     .short-intro {
         justify-content: center;
         align-items: start;
         padding-right: 5rem;
         padding-top: 2rem;
     }
-    
+
     .main-profile-img-box {
-        margin-top: 0;  
+        margin-top: 0;
     }
 
-    .main-profile-img-box img{
+    .main-profile-img-box img {
         width: 25rem;
         height: 25rem;
 
     }
 
     .title {
-        margin-top: -3rem; 
-        padding-right: 6rem; 
+        margin-top: -3rem;
+        padding-right: 6rem;
         padding-left: 2rem;
-     }
+    }
 
     .work-box {
         width: 100%;
         height: 17rem;
         overflow: hidden;
-    
+
     }
 
     .fix-pos {
@@ -737,6 +828,11 @@ li {
     }
 
     #work .main-left {
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+
+    #certificates .main-left {
         padding-left: 2rem;
         padding-right: 3rem;
     }
