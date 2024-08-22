@@ -93,7 +93,7 @@ const ps = new PerfectScrollbar('.custom-scrollbar-container', {
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	    menu: '#nav',
-        anchors: ['home', 'about'],
+        anchors: ['home', 'about', 'work'],
         direction: 'vertical',
         verticalCentered: true,
         verticalPadding: '2vh',
@@ -108,7 +108,7 @@ $(document).ready(function() {
             'textColor': '#2fbf71',
             'bulletsColor': '#fff',
             'position': 'left',
-            'tooltips': ['home', 'about']
+            'tooltips': ['home', 'about', 'work']
         },
        	// normalScrollElements: '.pp-table',
         normalScrollElementTouchThreshold: 5,

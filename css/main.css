@@ -525,6 +525,119 @@ li {
 /* End About me Styles */
 
 
+/* Start Work Styles */
+
+#work {
+    padding-top: 10rem;
+}
+
+.work-box {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.work-box img {
+    width: 100%;
+    height: 15rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.des-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* opacity: 0; */
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.des-overlay h5 {
+    font-size: 14px;
+    margin-top: 1.3rem;
+    margin-right: 2rem;
+    color: var(--clr-white);
+
+}
+
+.des-overlay h6 {
+    margin-top: 1rem;
+    direction: ltr;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    color: var(--clr-white);
+}
+
+
+/* .work-box:hover>.des-overlay {
+   opacity: 1;
+} */
+
+.work-box:hover>img {
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+   
+}
+
+.work-box:hover::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.video-wrapper {
+    width: 100%;
+    /* height:20rem; */
+    margin: 10px auto 10px auto; 
+    padding: 0;
+}
+
+.video-aparat {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-aparat iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sep-fix {
+    padding: 50px 5px;
+}
+
+.des-video h6 {
+    font-size: 0.9rem;
+}
+
+/* End Work Styles */
+
+
 
 
 
@@ -537,6 +650,10 @@ li {
         display: flex;
         justify-content: center;
         margin-top: 7rem;
+    }
+
+    .des-overlay h6 {
+        font-size: 12px;
     }
 
     
@@ -567,7 +684,9 @@ li {
         padding-top: 0rem; 
         padding-right: 0rem; 
      }
-
+     #work {
+        padding-top: 0;  
+    }
     
 }
 
@@ -605,4 +724,20 @@ li {
         padding-right: 6rem; 
         padding-left: 2rem;
      }
+
+    .work-box {
+        width: 100%;
+        height: 17rem;
+        overflow: hidden;
+    
+    }
+
+    .fix-pos {
+        padding-right: 0 !important;
+    }
+
+    #work .main-left {
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
 }
