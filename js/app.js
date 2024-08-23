@@ -89,7 +89,6 @@ const ps = new PerfectScrollbar('.custom-scrollbar-container', {
 
 /* Start Page Filling JQuery */
 
-
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
 	    menu: '#nav',
@@ -124,12 +123,7 @@ $(document).ready(function() {
 	});
 });
 
-
-
-
 /* End Page Filling JQuery */
-
-
 
 /* Start Magnific Popup JQuery */
 
@@ -147,7 +141,6 @@ $(document).ready(function() {
     });
 });
 
-
 /* End Magnific Popup JQuery */
 
 
@@ -162,11 +155,17 @@ menuBtnElement.addEventListener('click', () => {
     navIconElement.classList.toggle('bi-x')
 })
 
-
-
 /* End Navbar Toggler Button */
 
+/* Start PreLoader */
 
+const preLoader = document.getElementById('pre-loader')
+
+document.addEventListener('DOMContentLoaded', () => {
+    preLoader.style.display = 'none'
+})
+
+/* End Preloader */
 
 
 
