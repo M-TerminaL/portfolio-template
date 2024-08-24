@@ -170,7 +170,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+/* Start Auto Write */
 
+let string = "علیرضا بابایی";
+let str = document.getElementById("myName");
+let split = string.split("");
+console.log(split);
+(function anim(){
+    split.length > 0 ? str.innerHTML += split.shift(): clearTimeout(running);
+    let running = setTimeout(anim, 150);
+})();
+
+let string1 = "علیرضا بابایی";
+let str1 = document.getElementById("myName1");
+let split1 = string.split("");
+console.log(split1);
+(function anim(){
+    split1.length > 0 ? str1.innerHTML += split1.shift(): clearTimeout(running);
+    let running = setTimeout(anim, 150);
+})();
+
+/* End Auto Write */
 
 
 
